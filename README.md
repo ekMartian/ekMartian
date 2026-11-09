@@ -34,6 +34,12 @@ Compiler runtime patches address intermediate integer overflow in permutations, 
 
 **Stack** · C++, compiler runtime · [Permutations and combinations](https://github.com/lcompilers/lpython/pull/2879) · [LCM and hypotenuse](https://github.com/lcompilers/lpython/pull/2881)
 
+### 05 · MeghGen Technologies
+
+During my software engineering internship, I contributed to developer tooling, including agent skills and cross-language test generation.
+
+**Focus** · Developer automation, testing · [Shared tooling repository](https://github.com/sanskarkhatri-meghgen/skills)
+
 ## Development analytics
 
 ![Source language distribution, authorized repository inventory, and curated projects](assets/source.svg)
