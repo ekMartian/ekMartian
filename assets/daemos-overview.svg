@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="208" viewBox="0 0 660 208" role="img" aria-labelledby="title description">
+<title id="title">Daemos</title>
+<desc id="description">Conceptual overview · macOS file organization</desc>
+<rect x="1" y="1" width="658" height="206" rx="18" fill="#101827" stroke="#465873"/>
+<g font-family="system-ui, -apple-system, sans-serif">
+<text x="25" y="37" fill="#f4f8ff" font-size="24" font-weight="600">Daemos</text>
+<text x="25" y="64" fill="#b1c1d7" font-size="17" font-weight="500">Conceptual overview · macOS file organization</text>
+<rect x="25" y="83" width="198" height="103" rx="11" fill="#182437" stroke="#465873"/>
+<text x="37" y="111" fill="#7cebd2" font-size="16" font-weight="600">01</text>
+<text x="37" y="139" fill="#f4f8ff" font-size="20" font-weight="600">Filesystem events</text>
+<text x="37" y="163" fill="#b1c1d7" font-size="15" font-weight="500">Monitor file changes</text>
+<rect x="231" y="83" width="198" height="103" rx="11" fill="#182437" stroke="#465873"/>
+<text x="243" y="111" fill="#a4baff" font-size="16" font-weight="600">02</text>
+<text x="243" y="139" fill="#f4f8ff" font-size="20" font-weight="600">Local processing</text>
+<text x="243" y="163" fill="#b1c1d7" font-size="15" font-weight="500">Use on-device AI</text>
+<rect x="437" y="83" width="198" height="103" rx="11" fill="#182437" stroke="#465873"/>
+<text x="449" y="111" fill="#e4aeff" font-size="16" font-weight="600">03</text>
+<text x="449" y="139" fill="#f4f8ff" font-size="20" font-weight="600">Organization</text>
+<text x="449" y="163" fill="#b1c1d7" font-size="15" font-weight="500">Help organize files</text>
+</g>
+</svg>

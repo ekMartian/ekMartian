@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="209" viewBox="0 0 660 209" role="img" aria-labelledby="title description">
+<title id="title">Engineering interests</title>
+<desc id="description">Native development, Artificial intelligence, Mathematical computing, Algorithms, Systems programming, Open source</desc>
+<rect x="1" y="1" width="658" height="207" rx="18" fill="#101827" stroke="#465873"/>
+<g font-family="system-ui, -apple-system, sans-serif">
+<text x="25" y="38" fill="#f4f8ff" font-size="24" font-weight="600">Engineering interests</text>
+<path d="M25 91h286" stroke="#34465e"/>
+<circle cx="31" cy="75" r="4" fill="#7cebd2"/>
+<text x="46" y="82" fill="#f4f8ff" font-size="21" font-weight="600">Native development</text>
+<path d="M335 91h286" stroke="#34465e"/>
+<circle cx="341" cy="75" r="4" fill="#a4baff"/>
+<text x="356" y="82" fill="#f4f8ff" font-size="21" font-weight="600">Artificial intelligence</text>
+<path d="M25 137h286" stroke="#34465e"/>
+<circle cx="31" cy="121" r="4" fill="#e4aeff"/>
+<text x="46" y="128" fill="#f4f8ff" font-size="21" font-weight="600">Mathematical computing</text>
+<path d="M335 137h286" stroke="#34465e"/>
+<circle cx="341" cy="121" r="4" fill="#e4aeff"/>
+<text x="356" y="128" fill="#f4f8ff" font-size="21" font-weight="600">Algorithms</text>
+<path d="M25 183h286" stroke="#34465e"/>
+<circle cx="31" cy="167" r="4" fill="#7cebd2"/>
+<text x="46" y="174" fill="#f4f8ff" font-size="21" font-weight="600">Systems programming</text>
+<path d="M335 183h286" stroke="#34465e"/>
+<circle cx="341" cy="167" r="4" fill="#a4baff"/>
+<text x="356" y="174" fill="#f4f8ff" font-size="21" font-weight="600">Open source</text>
+</g>
+</svg>

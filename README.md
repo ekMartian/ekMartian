@@ -6,7 +6,7 @@
 
 I study Mathematics and Computing at BITS Pilani, Goa. My work spans native macOS applications, systems programming, independent products, and open-source development. My interests include AI and machine learning, algorithms and problem solving in C++, computational science, and computational physics.
 
-[LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Phosphor](https://usephosphor.app) · [Open-source work](#open-source) · [Development analytics](#development-analytics) · [Competitive programming](#competitive-programming)
+[LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Phosphor](https://usephosphor.app) · [Engineering work](#selected-engineering-work) · [Technical stack](#technical-stack) · [Open-source work](#open-source) · [Development analytics](#development-analytics) · [Competitive programming](#competitive-programming)
 
 ## Selected engineering work
 
@@ -14,11 +14,17 @@ I study Mathematics and Computing at BITS Pilani, Goa. My work spans native macO
 
 [Phosphor](https://usephosphor.app) brings display tools and presentation features together in a native Mac app. Flashbang Protection addresses abrupt brightness changes, and Studio Features support calls and presentations. Phosphor supports macOS 13 and later.
 
+[<img src="assets/phosphor-color-grading.png" width="660" alt="Phosphor’s macOS Color Grading panel with temperature, contrast, gamma, and presets">](https://usephosphor.app/color-grading-demo.png)
+
+*Color Grading in Phosphor. Screenshot from the [official product site](https://usephosphor.app).*
+
 **Stack** · Swift, SwiftUI, Metal, macOS
 
 ### 02 · Daemos
 
 A native macOS file-organization system. Daemos monitors filesystem changes and uses local AI to help organize files on-device.
+
+![Daemos conceptual overview of filesystem monitoring, on-device processing, and file organization](assets/daemos-overview.svg)
 
 **Stack** · Swift, Objective-C++, C++, FSEvents, SQLite
 
@@ -26,7 +32,9 @@ A native macOS file-organization system. Daemos monitors filesystem changes and 
 
 A software discovery and ratings platform in development for apps, developer tools, and websites. Planned features include trusted user ratings, tools for discovering software, and community recognition for products.
 
-**Stack** · TypeScript, React, Next.js, PostgreSQL · [Website coming soon](https://warevote.com)
+![Warevote product concept covering software discovery, user ratings, and community recognition](assets/warevote-concept.svg)
+
+**Stack** · TypeScript, React, Next.js, PostgreSQL · Website planned at `warevote.com`
 
 ### 04 · LPython
 
@@ -54,18 +62,11 @@ The GitHub calendar includes anonymized private activity when shared on the prof
 
 ## Technical stack
 
-| Area | Tools and applications |
-| --- | --- |
-| **Programming languages** | Swift, C++, Objective-C++, Python, TypeScript, JavaScript, and SQL |
-| **Native development** | macOS, SwiftUI, Metal, and Xcode |
-| **Systems programming** | Platform APIs, event-driven processing, C++ interoperability, and compiler runtime work |
-| **Web development** | React and Next.js for application interfaces and product sites |
-| **AI and machine learning** | Python, NumPy, and PyTorch for coursework and experiments |
-| **Data and databases** | PostgreSQL, SQL schema migrations, and relational data modeling |
-| **Developer tooling** | Git, GitHub Actions, automated tests, agent skills, and cross-language test generation |
-| **Mathematical computing** | Algorithms, numerical computation, integer arithmetic, and computational physics interests |
+![Languages: Swift, C++, Objective-C++, Python, TypeScript, JavaScript, SQL. Native and systems: macOS, SwiftUI, Metal, Xcode, FSEvents. Web and data: React, Next.js, PostgreSQL, SQLite. AI and computing: NumPy, PyTorch.](assets/technology.svg)
 
 ## Currently exploring
+
+![Engineering interests: native development, artificial intelligence, mathematical computing, algorithms, systems programming, and open source](assets/engineering-interests.svg)
 
 - **Mathematics and computational physics** · numerical methods, modeling, and scientific computing.
 - **AI and native software** · on-device processing and how it fits into desktop tools.

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="330" viewBox="0 0 660 330" role="img" aria-labelledby="title description">
+<title id="title">Technologies by discipline</title>
+<desc id="description">Languages: Swift, C++, Objective-C++, Python, TypeScript, JavaScript, SQL; Native &amp; systems: macOS, SwiftUI, Metal, Xcode, FSEvents; Web &amp; data: React, Next.js, PostgreSQL, SQLite; AI &amp; computing: NumPy, PyTorch</desc>
+<rect x="1" y="1" width="658" height="328" rx="18" fill="#101827" stroke="#465873"/>
+<g font-family="system-ui, -apple-system, sans-serif">
+<text x="25" y="37" fill="#7cebd2" font-size="21" font-weight="600">Languages</text>
+<rect x="25" y="47" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="35" y="69" fill="#f4f8ff" font-size="16" font-weight="500">Swift</text>
+<rect x="91" y="47" width="44" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="101" y="69" fill="#f4f8ff" font-size="16" font-weight="500">C++</text>
+<rect x="141" y="47" width="124" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="151" y="69" fill="#f4f8ff" font-size="16" font-weight="500">Objective-C++</text>
+<rect x="271" y="47" width="68" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="281" y="69" fill="#f4f8ff" font-size="16" font-weight="500">Python</text>
+<rect x="345" y="47" width="100" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="355" y="69" fill="#f4f8ff" font-size="16" font-weight="500">TypeScript</text>
+<rect x="451" y="47" width="100" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="461" y="69" fill="#f4f8ff" font-size="16" font-weight="500">JavaScript</text>
+<rect x="557" y="47" width="44" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="567" y="69" fill="#f4f8ff" font-size="16" font-weight="500">SQL</text>
+<text x="25" y="116" fill="#a4baff" font-size="21" font-weight="600">Native &amp; systems</text>
+<rect x="25" y="126" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="35" y="148" fill="#f4f8ff" font-size="16" font-weight="500">macOS</text>
+<rect x="91" y="126" width="76" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="101" y="148" fill="#f4f8ff" font-size="16" font-weight="500">SwiftUI</text>
+<rect x="173" y="126" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="183" y="148" fill="#f4f8ff" font-size="16" font-weight="500">Metal</text>
+<rect x="239" y="126" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="249" y="148" fill="#f4f8ff" font-size="16" font-weight="500">Xcode</text>
+<rect x="305" y="126" width="84" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="315" y="148" fill="#f4f8ff" font-size="16" font-weight="500">FSEvents</text>
+<text x="25" y="195" fill="#e4aeff" font-size="21" font-weight="600">Web &amp; data</text>
+<rect x="25" y="205" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="35" y="227" fill="#f4f8ff" font-size="16" font-weight="500">React</text>
+<rect x="91" y="205" width="76" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="101" y="227" fill="#f4f8ff" font-size="16" font-weight="500">Next.js</text>
+<rect x="173" y="205" width="100" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="183" y="227" fill="#f4f8ff" font-size="16" font-weight="500">PostgreSQL</text>
+<rect x="279" y="205" width="68" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="289" y="227" fill="#f4f8ff" font-size="16" font-weight="500">SQLite</text>
+<text x="25" y="274" fill="#7cebd2" font-size="21" font-weight="600">AI &amp; computing</text>
+<rect x="25" y="284" width="60" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="35" y="306" fill="#f4f8ff" font-size="16" font-weight="500">NumPy</text>
+<rect x="91" y="284" width="76" height="32" rx="7" fill="#1b2a3f" stroke="#465873"/>
+<text x="101" y="306" fill="#f4f8ff" font-size="16" font-weight="500">PyTorch</text>
+</g>
+</svg>
