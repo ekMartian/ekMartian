@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="315" viewBox="0 0 660 315" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub contribution activity</title>
+  <desc id="desc">769 contributions between 2026-05-01 and 2026-10-31 across six completed UTC months.</desc>
+  <rect x="1" y="1" width="658" height="313" rx="17" fill="#101a29" stroke="#45556b"/>
+  <path d="M32 113H628M32 245H628" stroke="#344359"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" fill="#acc0d5">
+    <text x="33" y="38" fill="#86edd1" font-size="15" letter-spacing="1.5">GITHUB CONTRIBUTION ACTIVITY</text>
+    <text x="33" y="82" fill="#f3f7ff" font-size="36" font-weight="700">769</text>
+    <text x="33" y="101" font-size="13">CONTRIBUTIONS</text>
+    <text x="628" y="82" text-anchor="end" font-size="15">2026-05-01  /  2026-10-31</text>
+    <g text-anchor="middle" font-size="15"><rect x="52" y="243" width="56" height="2" rx="4" fill="#86edd1"/><text x="80" y="235" fill="#eef6ff">5</text><text x="80" y="268">MAY</text><rect x="152" y="239" width="56" height="6" rx="4" fill="#86edd1"/><text x="180" y="231" fill="#eef6ff">20</text><text x="180" y="268">JUN</text><rect x="252" y="229" width="56" height="16" rx="4" fill="#86edd1"/><text x="280" y="221" fill="#eef6ff">49</text><text x="280" y="268">JUL</text><rect x="352" y="230" width="56" height="15" rx="4" fill="#86edd1"/><text x="380" y="222" fill="#eef6ff">47</text><text x="380" y="268">AUG</text><rect x="452" y="150" width="56" height="95" rx="4" fill="#86edd1"/><text x="480" y="142" fill="#eef6ff">291</text><text x="480" y="268">SEP</text><rect x="552" y="129" width="56" height="116" rx="4" fill="#86edd1"/><text x="580" y="121" fill="#eef6ff">357</text><text x="580" y="268">OCT</text></g>
+    <text x="33" y="294" font-size="13">GITHUB PROFILE CALENDAR · COMPLETED UTC MONTHS</text>
+  </g>
+</svg>

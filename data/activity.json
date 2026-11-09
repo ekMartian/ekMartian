@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "coverage": "github-profile-calendar",
+  "period_start": "2026-05-01",
+  "period_end": "2026-10-31",
+  "total_contributions": 769,
+  "months": [
+    {
+      "month": "2026-05",
+      "contributions": 5
+    },
+    {
+      "month": "2026-06",
+      "contributions": 20
+    },
+    {
+      "month": "2026-07",
+      "contributions": 49
+    },
+    {
+      "month": "2026-08",
+      "contributions": 47
+    },
+    {
+      "month": "2026-09",
+      "contributions": 291
+    },
+    {
+      "month": "2026-10",
+      "contributions": 357
+    }
+  ]
+}
