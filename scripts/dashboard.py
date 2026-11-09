@@ -308,8 +308,7 @@ def render_repository(data):
                     rect(194, y, max(1, round(335*pct/100)), 14, PALETTE[i % len(PALETTE)], 6),
                     label(620, y+13, f"{pct:.1f}%", 17, extra='text-anchor="end"')]
     top = 121 + len(ordered)*36
-    stats = (("PUBLIC REPOS", data["visible_public"]), ("PRIVATE REPOS", data["visible_private"]),
-             ("CURATED PROJECTS", data["projects"]))
+    stats = (("PUBLIC REPOS", data["visible_public"]), ("PRIVATE REPOS", data["visible_private"]))
     for i, (name, count) in enumerate(stats):
         x = 39 + i*200
         content += [label(x, top+9, name, 15), label(x, top+45, count, 32, PALETTE[i])]

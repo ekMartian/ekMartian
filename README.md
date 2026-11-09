@@ -42,9 +42,9 @@ During my software engineering internship, I contributed to developer tooling, i
 
 ## Development analytics
 
-![Source language distribution, authorized repository inventory, and curated projects](assets/source.svg)
+![Source language distribution, and authorized repository inventory](assets/source.svg)
 
-The language chart measures **filtered source bytes at the default-branch tip** across a curated project cohort that includes private work. It excludes upstream forks, tutorials, coursework, and known generated and vendored paths. The inventory counts owned repositories visible to the collection credential. The project count groups related repositories, including an app and its companion site.
+The language chart measures **filtered source bytes at the default-branch tip** across a curated project cohort that includes private work. It excludes upstream forks, tutorials, coursework, and known generated and vendored paths. The inventory counts owned repositories visible to the collection credential.
 
 ![Annual and monthly GitHub contributions, recent activity, and a 26-week isometric contribution terrain](assets/calendar.svg)
 
