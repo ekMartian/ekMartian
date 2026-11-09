@@ -6,21 +6,33 @@
 
 I study Mathematics and Computing at BITS Pilani, Goa. My work spans native macOS applications, systems programming, independent products, and open-source development. My interests include AI and machine learning, algorithms and problem solving in C++, computational science, and computational physics.
 
-[LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Phosphor](https://usephosphor.app) · [Open-source work](#open-source) · [Development analytics](#development-analytics)
+[LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Phosphor](https://usephosphor.app) · [Open-source work](#open-source) · [Development analytics](#development-analytics) · [Competitive programming](#competitive-programming)
 
 ## Selected engineering work
 
-### 01 · Phosphor — native macOS display utility
+### 01 · Phosphor
 
-[Phosphor](https://usephosphor.app) brings display tools and presentation features together in a native Mac app. Flashbang Protection addresses abrupt brightness changes, and Studio Features support calls and presentations. Phosphor supports macOS 13 and later. It represents my work in native application development and independent product building.
+[Phosphor](https://usephosphor.app) brings display tools and presentation features together in a native Mac app. Flashbang Protection addresses abrupt brightness changes, and Studio Features support calls and presentations. Phosphor supports macOS 13 and later.
 
-### 02 · LPython — numerical correctness
+**Stack** · Swift, SwiftUI, Metal, macOS
 
-I submitted patches for intermediate integer overflow in LPython’s math runtime, including combinations, permutations, least common multiples, and hypotenuse calculations. These patches address cases where intermediate arithmetic can exceed the integer range. The upstream pull requests link to the changes and show their review status.
+### 02 · Daemos
 
-### 03 · MeghGen — developer tooling
+A native macOS file-organization system. Daemos monitors filesystem changes and uses local AI to help organize files on-device.
 
-During my software engineering internship, I worked on developer automation, including agent skills and cross-language test generation. The [shared tooling repository](https://github.com/sanskarkhatri-meghgen/skills) records my contributions.
+**Stack** · Swift, Objective-C++, C++, FSEvents, SQLite
+
+### 03 · Warevote
+
+A software discovery and ratings platform in development for apps, developer tools, and websites. Planned features include trusted user ratings, tools for discovering software, and community recognition for products.
+
+**Stack** · TypeScript, React, Next.js, PostgreSQL · [Website coming soon](https://warevote.com)
+
+### 04 · LPython
+
+Compiler runtime patches address intermediate integer overflow in permutations, combinations, least common multiples, and hypotenuse calculations.
+
+**Stack** · C++, compiler runtime · [Permutations and combinations](https://github.com/lcompilers/lpython/pull/2879) · [LCM and hypotenuse](https://github.com/lcompilers/lpython/pull/2881)
 
 ## Development analytics
 
@@ -64,3 +76,11 @@ B.E. (Hons.) in Mathematics and Computing · 2024–2028 (expected)
 | Permutations and combinations | [Intermediate overflow patch](https://github.com/lcompilers/lpython/pull/2879) |
 | Least common multiple and hypotenuse | [Revised overflow patch](https://github.com/lcompilers/lpython/pull/2881) |
 | Documentation | [Corrections and wording improvements](https://github.com/lcompilers/lpython/pull/2878) |
+
+## Competitive programming
+
+I primarily use **C++** for competitive programming, with a focus on algorithms and data structures. [Codeforces · aMartian](https://codeforces.com/profile/aMartian)
+
+![Codeforces current and peak rating, distinct problems solved, and rating history](assets/codeforces.svg)
+
+Problems solved counts distinct contest problems with an accepted submission in the Codeforces API. The chart shows rating changes from rated contests.

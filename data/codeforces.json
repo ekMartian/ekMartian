@@ -1,0 +1,38 @@
+{
+  "handle": "aMartian",
+  "history": [
+    {
+      "rating": 429,
+      "timestamp": 1763138100
+    },
+    {
+      "rating": 671,
+      "timestamp": 1763310900
+    },
+    {
+      "rating": 861,
+      "timestamp": 1774718100
+    },
+    {
+      "rating": 989,
+      "timestamp": 1783875000
+    },
+    {
+      "rating": 1043,
+      "timestamp": 1784047800
+    },
+    {
+      "rating": 1124,
+      "timestamp": 1784222100
+    },
+    {
+      "rating": 1113,
+      "timestamp": 1784392500
+    }
+  ],
+  "max_rating": 1124,
+  "observed_on": "2026-11-09",
+  "problems_solved": 229,
+  "rating": 1113,
+  "schema_version": 1
+}

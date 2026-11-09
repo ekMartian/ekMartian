@@ -25,3 +25,9 @@ The private source refresh requires a [fine-grained personal access token](https
 The publication boundary accepts fixed fields, bounded integers, ISO dates, and allowlisted language/category labels. It rejects private names, file paths, URLs, and unrecognized fields. Diagnostics contain only generic failures. Do not enable shell tracing or dump upstream responses. The README and hero remain editorial.
 
 Run `python3 -m unittest discover -s tests`, `python3 -m scripts.dashboard calendar check`, and `python3 -m scripts.dashboard source check` for local validation.
+
+## Codeforces
+
+[Codeforces JSON](data/codeforces.json) and its SVG are refreshed separately at 04:43 UTC (10:13 IST). The collector uses the [official API](https://codeforces.com/apiHelp/methods). Current and peak ratings come from `user.info`, the chart uses `user.rating`, and solved problems are distinct contest ID and problem index pairs with an accepted verdict across paginated `user.status` results. The checked-in snapshot is the last successful result. API failures, rate limiting, incomplete pages, and inconsistent ratings preserve that snapshot. The collector retries transient failures with backoff and uses no API credentials.
+
+To refresh manually, open **Actions → Refresh Codeforces card → Run workflow**. Once a public solutions repository exists, add a Markdown link beside the Codeforces profile link in the competitive programming section. Keep solution counts separate from GitHub contributions and the independent-product cohort. A future language analysis of problem solutions should report that corpus separately because many small C++ submissions can skew the project language mix.
