@@ -16,7 +16,7 @@ EXTENSIONS = {
     ".rs": "Rust", ".go": "Go", ".java": "Java", ".kt": "Kotlin",
 }
 EXCLUDED = {
-    "node_modules", "vendor", "vendors", "third_party", "third-party", "external", "dependencies",
+    "node_modules", "vendor", "vendored", "thirdparty", "vendors", "third_party", "third-party", "external", "dependencies",
     "pods", "carthage", "build", ".build", "dist", "out", "deriveddata", "generated",
     "fixtures", "snapshots", "coverage", ".next", ".venv", "venv", "__pycache__",
 }
@@ -38,6 +38,8 @@ def language_for(filename):
     if EXCLUDED.intersection(path.parts[:-1]) or any(
         marker in path.name for marker in (".min.", ".generated.", ".gen.", ".g.", ".d.ts", "_pb2.", ".bundle.")
     ):
+        return None
+    if path.name.split(".")[0] in {"turndown", "readability", "purify", "jquery", "highlight", "marked"}:
         return None
     return EXTENSIONS.get(path.suffix)
 

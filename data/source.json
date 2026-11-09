@@ -1,0 +1,43 @@
+{
+  "active_projects_90d": 4,
+  "as_of": "2026-11-09",
+  "coverage": "authorized-owned-inventory-curated-source",
+  "measured_repositories": 5,
+  "monthly_samples": [
+    {
+      "date": "2026-11-09",
+      "source_bytes": {
+        "C++": 233965,
+        "JavaScript": 57611,
+        "Metal": 4790,
+        "Objective-C++": 332574,
+        "Python": 508591,
+        "SQL": 61205,
+        "Shell": 47056,
+        "Swift": 2522222,
+        "TypeScript": 2362554
+      }
+    }
+  ],
+  "private_measured": 5,
+  "project_categories": {
+    "Browser tooling": 1,
+    "Native desktop": 2,
+    "Web platform": 1
+  },
+  "projects": 4,
+  "schema_version": 1,
+  "source_bytes": {
+    "C++": 233965,
+    "JavaScript": 57611,
+    "Metal": 4790,
+    "Objective-C++": 332574,
+    "Python": 508591,
+    "SQL": 61205,
+    "Shell": 47056,
+    "Swift": 2522222,
+    "TypeScript": 2362554
+  },
+  "visible_private": 10,
+  "visible_public": 7
+}

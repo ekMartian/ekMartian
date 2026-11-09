@@ -1,4 +1,4 @@
-name: Refresh contribution activity
+name: Refresh engineering dashboard
 
 on:
   schedule:
@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
+  calendar:
     if: github.repository == 'ekMartian/ekMartian' && github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -21,31 +21,63 @@ jobs:
     outputs:
       snapshot: ${{ steps.collect.outputs.snapshot }}
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
       - id: collect
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          snapshot=$(python3 scripts/activity.py collect)
+          snapshot=$(python3 -m scripts.dashboard calendar collect)
+          printf 'snapshot=%s\n' "$snapshot" >> "$GITHUB_OUTPUT"
+
+  source:
+    if: github.repository == 'ekMartian/ekMartian' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      snapshot: ${{ steps.collect.outputs.snapshot }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - id: collect
+        env:
+          PROFILE_READ_TOKEN: ${{ secrets.PROFILE_READ_TOKEN }}
+          PROFILE_SOURCE_COHORT: ${{ secrets.PROFILE_SOURCE_COHORT }}
+        run: |
+          if [[ -z "$PROFILE_READ_TOKEN" || -z "$PROFILE_SOURCE_COHORT" ]]; then
+            echo "::notice::Private source refresh needs repository secrets; retaining the verified snapshot."
+            exit 0
+          fi
+          snapshot=$(python3 -m scripts.dashboard source collect)
           printf 'snapshot=%s\n' "$snapshot" >> "$GITHUB_OUTPUT"
 
   publish:
-    needs: collect
+    needs: [calendar, source]
+    if: always() && !cancelled() && (needs.calendar.outputs.snapshot != '' || needs.source.outputs.snapshot != '')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Validate and publish aggregate files
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate and publish dashboard
         env:
-          SNAPSHOT: ${{ needs.collect.outputs.snapshot }}
+          CALENDAR: ${{ needs.calendar.outputs.snapshot }}
+          SOURCE: ${{ needs.source.outputs.snapshot }}
         run: |
-          printf '%s' "$SNAPSHOT" | python3 scripts/activity.py apply
-          python3 scripts/activity.py check
-          git add -- data/activity.json assets/activity.svg
+          if [[ -n "$CALENDAR" ]]; then
+            printf '%s' "$CALENDAR" | python3 -m scripts.dashboard calendar apply
+          fi
+          if [[ -n "$SOURCE" ]]; then
+            printf '%s' "$SOURCE" | python3 -m scripts.dashboard source apply
+          fi
+          python3 -m scripts.dashboard calendar check
+          python3 -m scripts.dashboard source check
+          git add -- data/calendar.json data/source.json assets/calendar.svg assets/source.svg
           if git diff --cached --quiet; then exit 0; fi
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh GitHub contribution activity'
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Refresh engineering dashboard'
           git push

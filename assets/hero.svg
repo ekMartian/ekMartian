@@ -1,27 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="260" viewBox="0 0 880 260" role="img" aria-labelledby="title desc">
-  <title id="title">Arnav Kulshreshtha</title>
-  <desc id="desc">Portfolio banner with a dark ink background and a mint signal trace.</desc>
-  <defs>
-    <linearGradient id="ink" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#141f30"/><stop offset="1" stop-color="#0a111c"/>
-    </linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" fill="none" stroke="#27394c"/>
-    </pattern>
-  </defs>
-  <rect x="1" y="1" width="878" height="258" rx="18" fill="url(#ink)" stroke="#45556b"/>
-  <path d="M31 52h28m-14-14v28" stroke="#86edd1" stroke-width="2"/>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2" fill="#86edd1">
-    <text x="73" y="57">ENGINEERING PORTFOLIO</text>
-    <text x="36" y="220" fill="#acbcd0">MACOS / SYSTEMS / WEB</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="226" viewBox="0 0 660 226" role="img" aria-labelledby="title desc">
+<title id="title">Arnav Kulshreshtha</title>
+<desc id="desc">Mathematics and Computing at BITS Pilani. Software engineering, macOS, AI, and computational science.</desc>
+<defs>
+  <linearGradient id="ink" x2="1" y2="1">
+    <stop stop-color="#1a273b"/><stop offset="1" stop-color="#0c1422"/>
+  </linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#263a51"/>
+  </pattern>
+  <clipPath id="bounds"><rect x="1" y="1" width="658" height="224" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#bounds)">
+  <rect width="660" height="226" fill="url(#ink)"/>
+  <rect x="408" width="252" height="226" fill="url(#grid)" opacity=".75"/>
+  <g fill="none" stroke-width="1.5" opacity=".8">
+    <path d="M411 159Q450 69 513 76T654 123M413 174Q454 88 513 94T654 141M418 189Q461 106 514 112T654 159M429 204Q467 125 515 130T654 177" stroke="#7cebd2"/>
+    <path d="M458 217Q486 184 500 139T556 61M489 220Q512 187 525 143T581 69M520 223Q541 191 553 152T605 85M552 225Q570 197 580 163T627 100" stroke="#9ab6ff"/>
   </g>
-  <g font-family="system-ui, -apple-system, sans-serif" fill="#f3f7ff">
-    <text x="36" y="121" font-size="48" font-weight="700">Arnav</text>
-    <text x="36" y="173" font-size="48" font-weight="700">Kulshreshtha</text>
-  </g>
-  <rect x="473" y="37" width="368" height="186" rx="11" fill="url(#grid)" opacity=".65" stroke="#45556b"/>
-  <path d="M491 170h56l29-50 29 50h36l38-81 42 81h99" fill="none" stroke="#86edd1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="679" cy="89" r="5" fill="#e0aaff"/>
-  <circle cx="820" cy="170" r="4" fill="#86edd1"/>
-  <text x="492" y="201" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2" fill="#acbcd0">SIGNAL STUDY / 01</text>
+  <circle cx="512" cy="112" r="4" fill="#e4aeff"/>
+</g>
+<rect x="1" y="1" width="658" height="224" rx="18" fill="none" stroke="#465873"/>
+<path d="M24 24v44" stroke="#7cebd2" stroke-width="3" stroke-linecap="round"/>
+<g font-family="system-ui, -apple-system, sans-serif">
+  <text x="39" y="51" fill="#7cebd2" font-size="15" letter-spacing="1.8" font-weight="700">ENGINEERING &amp; COMPUTATION</text>
+  <text x="38" y="110" fill="#f4f8ff" font-size="42" font-weight="750">Arnav</text>
+  <text x="38" y="157" fill="#f4f8ff" font-size="42" font-weight="750">Kulshreshtha</text>
+  <text x="39" y="193" fill="#b1c1d7" font-size="17">Mathematics &amp; Computing · BITS Pilani</text>
+</g>
 </svg>

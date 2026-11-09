@@ -1,66 +1,66 @@
-![Arnav Kulshreshtha · Software engineer and independent product builder](assets/hero.svg)
+![Arnav Kulshreshtha · Mathematics and Computing · Software Engineering](assets/hero.svg)
 
 # Arnav Kulshreshtha
 
-**Software engineer · Independent product builder · Mathematics & computing**
+**Mathematics & Computing at BITS Pilani · Software Engineering · macOS · AI · Computational Science**
 
-I build native macOS software and full-stack products. I’m drawn to the parts of a product where the implementation shapes what people experience, from how a display responds to sudden changes to how numerical code handles values at the limits of an integer type.
+I study Mathematics and Computing at BITS Pilani, Goa. My work spans native macOS applications, systems programming, independent products, and open-source development. My interests include AI and machine learning, algorithms and problem solving in C++, computational science, and computational physics.
 
-[Phosphor](https://usephosphor.app) · [LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Open-source work](#open-source)
+[LinkedIn](https://in.linkedin.com/in/arnav-kulshreshtha) · [Phosphor](https://usephosphor.app) · [Open-source work](#open-source) · [Development analytics](#development-analytics)
 
-## Featured work
+## Selected engineering work
 
-### Phosphor · Native macOS display utility
+### 01 · Phosphor — native macOS display utility
 
-Phosphor helps Mac users manage their displays. Flashbang Protection addresses abrupt changes in brightness, and Studio Features provide display tools for calls and presentations. The app supports macOS 13 and later.
+[Phosphor](https://usephosphor.app) brings display tools and presentation features together in a native Mac app. Flashbang Protection addresses abrupt brightness changes, and Studio Features support calls and presentations. Phosphor supports macOS 13 and later. It represents my work in native application development and independent product building.
 
-[Explore Phosphor](https://usephosphor.app)
+### 02 · LPython — numerical correctness
 
-### LPython · Numerical correctness in the runtime
+I submitted patches for intermediate integer overflow in LPython’s math runtime, including combinations, permutations, least common multiples, and hypotenuse calculations. These patches address cases where intermediate arithmetic can exceed the integer range. The upstream pull requests link to the changes and show their review status.
 
-I submitted changes for intermediate integer overflow in combinations, permutations, least common multiples, and hypotenuse calculations. The work focuses on cases where a result can be representable even though an intermediate operation overflows.
+### 03 · MeghGen — developer tooling
 
-## Engineering focus
+During my software engineering internship, I worked on developer automation, including agent skills and cross-language test generation. The [shared tooling repository](https://github.com/sanskarkhatri-meghgen/skills) records my contributions.
 
-| Area | Tools and work |
+## Development analytics
+
+![Source language distribution, authorized repository inventory, and projects active in the last 90 days](assets/source.svg)
+
+The language chart measures **filtered source bytes at the default-branch tip** across a curated project cohort that includes private work. It excludes upstream forks, tutorials, coursework, and known generated and vendored paths. The inventory counts owned repositories visible to the collection credential. The project count groups related repositories, including an app and its companion site.
+
+![Annual and monthly GitHub contributions, recent activity, and a 26-week calendar heatmap](assets/calendar.svg)
+
+The GitHub calendar includes anonymized private activity when shared on the profile. Calendar contributions can include eligible commits, pull requests, reviews, issues, and other GitHub events. Restricted contributions are calendar entries whose underlying details GitHub withholds. The latest monthly bar is month-to-date through the date shown.
+
+[Source and repository data](data/source.json) · [Contribution calendar data](data/calendar.json) · [Methods and coverage](ANALYTICS.md)
+
+## Technical stack
+
+| Area | Tools and applications |
 | --- | --- |
-| **Native desktop** | Swift, SwiftUI, Xcode, and Metal for macOS interfaces and graphics |
-| **Systems and algorithms** | C++, Objective-C++, platform APIs, integer edge cases, and event-driven software |
-| **Full stack** | TypeScript, JavaScript, React, Next.js, PostgreSQL, and SQL migrations |
-| **Tooling and computation** | Python, automated testing, CI, and mathematical computing |
+| **Programming languages** | Swift, C++, Objective-C++, Python, TypeScript, JavaScript, and SQL |
+| **Native development** | macOS, SwiftUI, Metal, and Xcode |
+| **Systems programming** | Platform APIs, event-driven processing, C++ interoperability, and compiler runtime work |
+| **Web development** | React and Next.js for application interfaces and product sites |
+| **AI and machine learning** | Python, NumPy, and PyTorch for coursework and experiments |
+| **Data and databases** | PostgreSQL, SQL schema migrations, and relational data modeling |
+| **Developer tooling** | Git, GitHub Actions, automated tests, agent skills, and cross-language test generation |
+| **Mathematical computing** | Algorithms, numerical computation, integer arithmetic, and computational physics interests |
 
-## Development activity
+## Experience and education
 
-![Monthly GitHub profile contributions for the latest six completed months](assets/activity.svg)
+**MeghGen Technologies · Software Engineering Intern**
 
-The chart uses GitHub’s contribution calendar and includes anonymized private activity when shared through the profile. GitHub applies its own contribution rules. The chart covers completed UTC months, and its date range appears in the graphic.
+May–July 2026 · Developer tooling, software automation, and testing.
 
-[Machine-readable snapshot](data/activity.json) · [Collection and privacy policy](ANALYTICS.md)
-
-## Experience
-
-**Software Engineering Intern · MeghGen Technologies**
-
-
-May–July 2026
-
-Worked on developer tooling and software development automation, including agent skills and cross-language test generation. The public shared tooling repository records my contributions.
-
-[Shared developer tooling](https://github.com/sanskarkhatri-meghgen/skills)
-
-## Education
-
-**BITS Pilani, K. K. Birla Goa Campus**
-
+**BITS Pilani · K. K. Birla Goa Campus**
 
 B.E. (Hons.) in Mathematics and Computing · 2024–2028 (expected)
 
-My interests include algorithms, numerical computation, and the systems that put them to work.
-
 ## Open source
 
-- **LPython · Permutations and combinations.** [Integer overflow patch](https://github.com/lcompilers/lpython/pull/2879)
-- **LPython · Least common multiple and hypotenuse.** [Revised overflow patch](https://github.com/lcompilers/lpython/pull/2881)
-- **LPython · Documentation.** [Documentation improvements](https://github.com/lcompilers/lpython/pull/2878)
-
-The links point to submitted upstream work. GitHub shows the current review and merge status.
+| LPython contribution | Upstream submission |
+| --- | --- |
+| Permutations and combinations | [Intermediate overflow patch](https://github.com/lcompilers/lpython/pull/2879) |
+| Least common multiple and hypotenuse | [Revised overflow patch](https://github.com/lcompilers/lpython/pull/2881) |
+| Documentation | [Corrections and wording improvements](https://github.com/lcompilers/lpython/pull/2878) |
