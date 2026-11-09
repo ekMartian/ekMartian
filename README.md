@@ -36,11 +36,11 @@ Compiler runtime patches address intermediate integer overflow in permutations, 
 
 ## Development analytics
 
-![Source language distribution, authorized repository inventory, and projects active in the last 90 days](assets/source.svg)
+![Source language distribution, authorized repository inventory, and curated projects](assets/source.svg)
 
 The language chart measures **filtered source bytes at the default-branch tip** across a curated project cohort that includes private work. It excludes upstream forks, tutorials, coursework, and known generated and vendored paths. The inventory counts owned repositories visible to the collection credential. The project count groups related repositories, including an app and its companion site.
 
-![Annual and monthly GitHub contributions, recent activity, and a 26-week calendar heatmap](assets/calendar.svg)
+![Annual and monthly GitHub contributions, recent activity, and a 26-week isometric contribution terrain](assets/calendar.svg)
 
 The GitHub calendar includes anonymized private activity when shared on the profile. Calendar contributions can include eligible commits, pull requests, reviews, issues, and other GitHub events. Restricted contributions are calendar entries whose underlying details GitHub withholds. The latest monthly bar is month-to-date through the date shown.
 
@@ -58,6 +58,12 @@ The GitHub calendar includes anonymized private activity when shared on the prof
 | **Data and databases** | PostgreSQL, SQL schema migrations, and relational data modeling |
 | **Developer tooling** | Git, GitHub Actions, automated tests, agent skills, and cross-language test generation |
 | **Mathematical computing** | Algorithms, numerical computation, integer arithmetic, and computational physics interests |
+
+## Currently exploring
+
+- **Mathematics and computational physics** · numerical methods, modeling, and scientific computing.
+- **AI and native software** · on-device processing and how it fits into desktop tools.
+- **Algorithms and systems** · C++ problem solving, filesystem behavior, and compiler runtime correctness.
 
 ## Experience and education
 

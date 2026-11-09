@@ -273,30 +273,27 @@ def render_calendar(data):
         content += [rect(x, 297-height, 34, height, PALETTE[1] if i == len(months)-1 else PALETTE[0]),
                     label(x+17, 289-height, count, 13, "#f4f8ff", 'text-anchor="middle"'),
                     label(x+17, 317, calendar.month_abbr[int(month[5:7])], 13, extra='text-anchor="middle"')]
-    content += [label(39, 356, "26 weeks of daily contributions", 18, "#f4f8ff")]
-    colors = ("#253247", "#24574f", "#2f8271", "#54bba3", "#97f1d9")
+    content += [label(39, 360, "Contribution terrain", 21, "#f4f8ff"),
+                label(39, 384, "26 weeks · one tile per day · height scales with activity", 15)]
     offset = (start.weekday() + 1) % 7
+    peak_day = max(1, *recent)
+    tiles = []
     for i, count in enumerate(recent):
         week, weekday = divmod(i + offset, 7)
-        level = sum(count >= threshold for threshold in (1, 4, 10, 20))
-        content.append(rect(66 + week * 20, 376 + weekday * 17, 16, 13, colors[level]))
-    for row, name in ((1, "M"), (3, "W"), (5, "F")):
-        content.append(label(40, 387 + row * 17, name, 12))
-    content += [label(39, 518, f"{start} to {end}", 14), label(395, 518, "0", 13), label(551, 518, "20+", 13)]
-    content += [rect(420+i*24, 506, 17, 13, color) for i, color in enumerate(colors)]
-    content += [label(39, 565, "Contributions by weekday", 18, "#f4f8ff")]
-    weekday_counts = Counter()
-    for date, count in zip(dates(start, end), recent):
-        weekday_counts[date.weekday()] += count
-    peak_day = max(1, *weekday_counts.values())
-    for weekday in range(7):
-        x = 40 + weekday * 84
-        count = weekday_counts[weekday]
-        height = max(1, round(44 * count / peak_day))
-        content += [rect(x, 650-height, 50, height, PALETTE[1]),
-                    label(x+25, 643-height, count, 13, "#f4f8ff", 'text-anchor="middle"'),
-                    label(x+25, 671, calendar.day_abbr[weekday], 13, extra='text-anchor="middle"')]
-    return card("GitHub activity", f"Profile calendar · through {end} UTC", 694, content)
+        x, y = 132 + 17 * week - 11 * weekday, 473 + 3 * week + 6 * weekday
+        height = round(66 * (count / peak_day) ** .65) if count else 0
+        tiles.append((y, x, height))
+    # Draw rear tiles first so foreground columns occlude them.
+    for y, x, height in sorted(tiles):
+        top = y - height
+        if height:
+            content.append(f'<path d="M{x-10} {top}l9 6v{height}l-9 -6z" fill="#257768"/>')
+            content.append(f'<path d="M{x-1} {top+6}l15 -3v{height}l-15 3z" fill="#329989"/>')
+        shade = "#9cf4dd" if height else "#273b54"
+        content.append(f'<path d="M{x-10} {top}l15 -3 9 6 -15 3z" fill="{shade}"/>')
+    content += [label(39, 610, f"{start} to {end}", 15),
+                label(620, 610, f"Highest day: {max(recent)}", 15, extra='text-anchor="end"')]
+    return card("GitHub activity", f"Profile calendar · through {end} UTC", 636, content)
 
 
 def render_repository(data):
@@ -312,11 +309,11 @@ def render_repository(data):
                     label(620, y+13, f"{pct:.1f}%", 17, extra='text-anchor="end"')]
     top = 121 + len(ordered)*36
     stats = (("PUBLIC REPOS", data["visible_public"]), ("PRIVATE REPOS", data["visible_private"]),
-             ("ACTIVE PROJECTS", f'{data["active_projects_90d"]}/{data["projects"]}'))
+             ("CURATED PROJECTS", data["projects"]))
     for i, (name, count) in enumerate(stats):
         x = 39 + i*200
         content += [label(x, top+9, name, 15), label(x, top+45, count, 32, PALETTE[i])]
-    content += [label(39, top+77, f'{data["measured_repositories"]} source repos · {data["private_measured"]} private · active = push in 90 days', 15),
+    content += [label(39, top+77, f'{data["measured_repositories"]} source repos · {data["private_measured"]} private', 15),
                 label(39, top+103, "  ·  ".join(f"{name} {data['project_categories'][name]}"
                                                for name in CATEGORIES if name in data["project_categories"]), 15),
                 label(39, top+129, f'First monthly language sample: {data["monthly_samples"][0]["date"]}', 14)]
