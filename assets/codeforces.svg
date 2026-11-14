@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="351" viewBox="0 0 660 351" role="img" aria-labelledby="title desc">
-<title id="title">Codeforces</title><desc id="desc">aMartian · C++ · observed 2026-11-13 UTC</desc>
+<title id="title">Codeforces</title><desc id="desc">aMartian · C++ · observed 2026-11-14 UTC</desc>
 <rect x="1" y="1" width="658" height="349" rx="18" fill="#101827" stroke="#465873"/>
 <path d="M24 22v50" stroke="#7cebd2" stroke-width="3" stroke-linecap="round"/>
 <g font-family="system-ui, -apple-system, sans-serif">
 <text x="39" y="43" font-size="24" fill="#f4f8ff" font-weight="700">Codeforces</text>
-<text x="39" y="69" font-size="16" fill="#b1c1d7" >aMartian · C++ · observed 2026-11-13 UTC</text>
+<text x="39" y="69" font-size="16" fill="#b1c1d7" >aMartian · C++ · observed 2026-11-14 UTC</text>
 <text x="39" y="110" font-size="15" fill="#b1c1d7" >CURRENT RATING</text><text x="39" y="148" font-size="34" fill="#7cebd2" >1,113</text><text x="239" y="110" font-size="15" fill="#b1c1d7" >PEAK RATING</text><text x="239" y="148" font-size="34" fill="#9ab6ff" >1,124</text><text x="439" y="110" font-size="15" fill="#b1c1d7" >PROBLEMS SOLVED</text><text x="439" y="148" font-size="34" fill="#e4aeff" >229</text><text x="39" y="185" font-size="18" fill="#f4f8ff" >Rating history</text><path d="M90 212H618" stroke="#344359" stroke-dasharray="3 5"/><text x="39" y="216" font-size="13" fill="#b1c1d7" >1124</text><path d="M90 299H618" stroke="#344359" stroke-dasharray="3 5"/><text x="39" y="303" font-size="13" fill="#b1c1d7" >429</text><polyline points="90,299 94,269 377,245 604,229 608,222 613,212 617,213" fill="none" stroke="#7cebd2" stroke-width="3" stroke-linejoin="round"/><circle cx="90" cy="299" r="3" fill="#9ab6ff"/><circle cx="94" cy="269" r="3" fill="#9ab6ff"/><circle cx="377" cy="245" r="3" fill="#9ab6ff"/><circle cx="604" cy="229" r="3" fill="#9ab6ff"/><circle cx="608" cy="222" r="3" fill="#9ab6ff"/><circle cx="613" cy="212" r="3" fill="#9ab6ff"/><circle cx="617" cy="213" r="3" fill="#9ab6ff"/><text x="90" y="327" font-size="14" fill="#b1c1d7" >Nov 2025</text><text x="618" y="327" font-size="14" fill="#b1c1d7" text-anchor="end">Jul 2026</text>
 </g></svg>
