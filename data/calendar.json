@@ -1,7 +1,6 @@
 {
   "coverage": "github-profile-calendar",
   "daily": [
-    0,
     5,
     0,
     0,
@@ -182,9 +181,10 @@
     0,
     0,
     12,
-    40
+    40,
+    1
   ],
-  "heatmap_start": "2026-05-27",
+  "heatmap_start": "2026-05-28",
   "months": {
     "2025-12": 0,
     "2026-01": 6,
@@ -197,17 +197,17 @@
     "2026-08": 57,
     "2026-09": 294,
     "2026-10": 398,
-    "2026-11": 229
+    "2026-11": 230
   },
   "schema_version": 2,
-  "through": "2026-11-24",
+  "through": "2026-11-25",
   "years": [
     {
       "contributions": 1,
       "year": 2025
     },
     {
-      "contributions": 1076,
+      "contributions": 1077,
       "year": 2026
     }
   ]
